@@ -29,10 +29,9 @@ function find_files(pathname) {
 
 
 function import_tree(expr) {
-  var block = this.currentBlock,
-      vals  = [stylus.nodes['null']];
-
-  pathname = path.resolve(path.dirname(this.filename), expr.val);
+  var block     = this.currentBlock,
+      vals      = [stylus.nodes['null']],
+      pathname  = path.resolve(path.dirname(this.filename), expr.val);
 
   find_files(pathname).forEach(function (file) {
     var expr = new stylus.nodes.Expression(),
