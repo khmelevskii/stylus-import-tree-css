@@ -1,0 +1,8 @@
+{
+  "name":         "stylus-import-tree",
+  "version":      "0.0.0-proof-of-concept",
+  "author":       "Aleksey V Zapparov AKA ixti",
+  "dependencies": {
+                    "stylus": "0.27.1"
+                  }
+}
