@@ -10,7 +10,7 @@ var stylus  = require('stylus');
 ////////////////////////////////////////////////////////////////////////////////
 
 
-var filename  = path.join(__dirname, 'foobar.styl');
+var filename  = path.join(__dirname, 'stylus-sources/foobar.styl');
 var source    = fs.readFileSync(filename, 'utf8');
 
 
