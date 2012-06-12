@@ -10,18 +10,13 @@ var stylus  = require('stylus');
 ////////////////////////////////////////////////////////////////////////////////
 
 
-var filename  = path.join(__dirname, 'stylus-sources/foobar.styl');
-var source    = fs.readFileSync(filename, 'utf8');
-
-
 function find_files(pathname) {
   var files = [];
 
-  fs.readdirSync(pathname).forEach(function (file) {
-    var filename  = path.join(pathname, file);
-    var stats     = fs.statSync(filename);
+  fs.readdirSync(pathname).forEach(function (filename) {
+    filename = path.join(pathname, filename),
 
-    if (stats.isDirectory()) {
+    if (fs.statSync(filename).isDirectory()) {
       files = files.concat(find_files(filename));
       return;
     }
@@ -31,6 +26,13 @@ function find_files(pathname) {
 
   return files.sort();
 }
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+var filename  = path.join(__dirname, 'stylus-sources/foobar.styl');
+var source    = fs.readFileSync(filename, 'utf8');
 
 
 ////////////////////////////////////////////////////////////////////////////////
