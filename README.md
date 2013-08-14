@@ -20,12 +20,4 @@ way you can control the order in this example is filenames, imports are done in
 alphabetical order. For total controll over what is included when and where,
 use [Mincer][1], which will give you awesome cow power!
 
-
-How to run
-----------
-
-    npm install
-    node .
-
-
 [1]: https://github.com/nodeca/mincer
