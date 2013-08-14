@@ -47,20 +47,3 @@ function import_tree(expr) {
   this.mixin(vals, block);
   return vals;
 }
-
-
-////////////////////////////////////////////////////////////////////////////////
-
-
-var filename  = path.join(__dirname, 'stylus-sources/foobar.styl');
-var source    = fs.readFileSync(filename, 'utf8');
-
-
-////////////////////////////////////////////////////////////////////////////////
-
-
-stylus(source, {filename: filename})
-  .define('import_tree', import_tree)
-  .render(function (err, css) {
-    console.log(css);
-  });
