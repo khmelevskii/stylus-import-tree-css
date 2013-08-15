@@ -1,4 +1,4 @@
-importTree = require '../index'
+importTree = require('../index').import_tree
 fs = require 'fs'
 path = require 'path'
 stylus = require 'stylus'
