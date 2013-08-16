@@ -1,12 +1,10 @@
-Style import\_tree Proof Of Concept
-===================================
+# stylus-import-tree
 
-This is a dummy exampe of `import_tree` implementation. Consider you have a
-directory with files you need to import, instead of writing bunch of `@import`
-statements in your stylus file, you might want to simply call `import_tree()`:
+This plugin allows you to recursively import entire directories instead of writing bunch of `@import`
+statements in your stylus file:
 
-``` stylus
-import_tree('./foobar');
+```stylus
+import_tree('./foobar')
 
 // insted of:
 // @import 'foobar/a'
@@ -14,10 +12,41 @@ import_tree('./foobar');
 // @import 'foobar/c/d'
 ```
 
+## Import order
+Files will be imported in alphabetical order based on filename. To import the files in a specific order you can either name them accordingly, use this plugin in conjunction with a build tool such as [Grunt](http://gruntjs.com/), or import them separately:
 
-**NOTICE** you can't flexibly control order of inclusions in this case. The only
-way you can control the order in this example is filenames, imports are done in
-alphabetical order. For total controll over what is included when and where,
-use [Mincer][1], which will give you awesome cow power!
+```stylus
+@import 'variables'
+@import 'base'
 
-[1]: https://github.com/nodeca/mincer
+import_tree('./modules')
+```
+
+## Setup
+You can setup this plugin using [define](https://github.com/LearnBoost/stylus/blob/master/docs/js.md#usefn)
+
+### Standalone
+```coffeescript
+importTree = require 'stylus-import-tree'
+
+stylus(str)
+.define("import_tree", importTree)
+.render (err, css) ->
+  throw err if err
+  console.log css
+```
+
+### Grunt
+```coffeescript
+grunt.initConfig
+  stylus:
+    dist:
+      options:
+        define:
+          import_tree: require 'stylus-import-tree'
+      files:
+        'tmp/assets/styles/app.css': ['app/styles/app.styl']
+```
+
+## Credit
+This is a fork of [Style import_tree Proof of Concept](https://github.com/ixti/stylus-import-tree) by Aleksey V. Zapparov.

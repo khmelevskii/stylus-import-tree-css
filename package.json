@@ -1,15 +1,15 @@
 {
   "name": "stylus-import-tree",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/ixti/stylus-import-tree",
   "author": {
-    "name": "Aleksey V Zapparov AKA ixti"
+    "name": "Derek Petersen",
+    "email": "tuxracer@gmail.com",
+    "url": "https://github.com/tuxracer"
   },
   "contributors": [
     {
-      "name": "Derek Petersen",
-      "email": "tuxracer@gmail.com",
-      "url": "https://twitter.com/tuxracer"
+      "name": "Aleksey V Zapparov AKA ixti"
     }
   ],
   "repository": {
@@ -23,7 +23,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "stylus": "~0.35.1",
+    "stylus": ">=0.35.1",
     "underscore": "~1.5.1",
     "glob": "~3.2.6",
     "coffee-script": "~1.6.3"
@@ -31,6 +31,7 @@
   "keywords": [
     "stylus",
     "css",
-    "directory"
+    "directory",
+    "recursive"
   ]
 }
