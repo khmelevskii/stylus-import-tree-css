@@ -1,3 +1,7 @@
+###!
+Licensed under the MIT license.
+###
+
 importTree = require('../index')
 fs = require 'fs'
 path = require 'path'

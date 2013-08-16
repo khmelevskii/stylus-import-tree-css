@@ -1,3 +1,7 @@
+###!
+Licensed under the MIT license.
+###
+
 path = require 'path'
 stylus = require 'stylus'
 glob = require 'glob'

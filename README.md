@@ -50,3 +50,6 @@ grunt.initConfig
 
 ## Credit
 This is a fork of [Style import_tree Proof of Concept](https://github.com/ixti/stylus-import-tree) by Aleksey V. Zapparov.
+
+## License
+[MIT](https://github.com/tuxracer/stylus-import-tree/blob/master/LICENSE)

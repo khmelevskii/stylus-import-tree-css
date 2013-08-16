@@ -1,6 +1,6 @@
 {
   "name": "stylus-import-tree",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/tuxracer/stylus-import-tree",
   "author": {
     "name": "Derek Petersen",
@@ -12,6 +12,7 @@
       "name": "Aleksey V Zapparov AKA ixti"
     }
   ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/tuxracer/stylus-import-tree.git"
