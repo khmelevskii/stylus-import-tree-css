@@ -1,7 +1,7 @@
 {
   "name": "stylus-import-tree",
-  "version": "0.1.4",
-  "homepage": "https://github.com/ixti/stylus-import-tree",
+  "version": "0.1.5",
+  "homepage": "https://github.com/tuxracer/stylus-import-tree",
   "author": {
     "name": "Derek Petersen",
     "email": "tuxracer@gmail.com",
@@ -32,6 +32,8 @@
     "stylus",
     "css",
     "directory",
-    "recursive"
+    "recursive",
+    "import",
+    "grunt"
   ]
 }
