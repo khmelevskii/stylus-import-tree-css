@@ -19,8 +19,7 @@ import_tree = (expr) ->
   .chain()
   .map (filename) =>
     importExpr = createImportNode filename
-    visited = @visitImport(importExpr)
-    visited.nodes
+    @visitImport(importExpr).nodes
   .flatten()
   .unshift(stylus.nodes['null'])
   .value()
