@@ -12,7 +12,7 @@ createImportNode = (filename) ->
   expr.push strNode
   new stylus.nodes.Import expr
 
-import_tree = (expr) ->
+module.exports = (expr) ->
   pathname = path.resolve path.dirname(@filename), expr.val
 
   nodes = _(getStylusFiles(pathname))
@@ -26,6 +26,3 @@ import_tree = (expr) ->
 
   @mixin nodes, @currentBlock
   nodes
-
-module.exports =
-  import_tree: import_tree
