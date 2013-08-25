@@ -23,7 +23,7 @@ import_tree('./modules')
 ```
 
 ## Setup
-You can setup this plugin using [define](https://github.com/LearnBoost/stylus/blob/master/docs/js.md#usefn)
+You can setup this plugin using [define](https://github.com/LearnBoost/stylus/blob/master/docs/js.md#definename-fn)
 
 ### Standalone
 ```coffeescript
