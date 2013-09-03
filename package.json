@@ -23,6 +23,9 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "dependencies": {
     "stylus": ">=0.37",
     "underscore": "~1.5.1",
@@ -36,5 +39,11 @@
     "recursive",
     "import",
     "grunt"
-  ]
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-stylus": "~0.8.0"
+  }
 }
