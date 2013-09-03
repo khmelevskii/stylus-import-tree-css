@@ -24,7 +24,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "stylus": ">=0.35.1",
+    "stylus": ">=0.37",
     "underscore": "~1.5.1",
     "glob": "~3.2.6",
     "coffee-script": "~1.6.3"
