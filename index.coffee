@@ -9,7 +9,9 @@ glob = require 'glob'
 _ = require 'underscore'
 
 getStylusFiles = (dir) ->
-  glob.sync "#{dir}/**/*.styl"
+  glob.sync("#{dir}/**/*.styl")
+  .map (item) -> # https://github.com/isaacs/node-glob/issues/74
+    path.resolve item
 
 getImportNodesFromFile = (filename) ->
   expr = new stylus.nodes.Expression()
