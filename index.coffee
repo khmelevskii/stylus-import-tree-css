@@ -26,13 +26,13 @@ getImportNodesFromDir = (dir) ->
   .unshift(stylus.nodes['null'])
   .value()
 
-getImportNodes = (path) ->
-  method = if fs.statSync(path).isDirectory() then getImportNodesFromDir else getImportNodesFromFile
-  method.call @, path
+getImportNodes = (filepath) ->
+  method = if fs.statSync(filepath).isDirectory() then getImportNodesFromDir else getImportNodesFromFile
+  method.call @, filepath
 
 module.exports = (expr) ->
-  path = path.resolve path.dirname(@filename), expr.val
-  nodes = getImportNodes.call @, path
+  filepath = path.resolve path.dirname(@filename), expr.val
+  nodes = getImportNodes.call @, filepath
 
   @mixin nodes, @currentBlock
   nodes
