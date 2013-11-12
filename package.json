@@ -32,8 +32,7 @@
   "dependencies": {
     "stylus": ">=0.37",
     "underscore": "~1.5.1",
-    "glob": "~3.2.6",
-    "coffee-script": "~1.6.3"
+    "glob": "~3.2.6"
   },
   "keywords": [
     "stylus",
@@ -44,6 +43,7 @@
     "grunt"
   ],
   "devDependencies": {
+    "coffee-script": "~1.6.3",
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-nodeunit": "~0.2.0",
