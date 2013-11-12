@@ -1,5 +1,12 @@
 module.exports = (grunt) ->
   grunt.initConfig
+    coffee:
+      dist:
+        files:
+          'index.js': 'src/index.coffee'
+        options:
+          bare: true
+
     nodeunit:
       files: ['test/test.coffee']
 
@@ -9,7 +16,7 @@ module.exports = (grunt) ->
           compress: false
           paths: ['test/fixtures']
           define:
-            import_tree: require './index'
+            import_tree: require './src/index'
         files:
           'tmp/app.css': ['test/fixtures/app.styl']
 
@@ -24,6 +31,7 @@ module.exports = (grunt) ->
   # Shortcuts
   grunt.registerTask 'test', ['clean', 'stylus', 'nodeunit']
   grunt.registerTask 'demo', ['clean', 'stylus', 'logcontent']
+  grunt.registerTask 'b', ['test', 'coffee']
 
   # Default task
-  grunt.registerTask 'default', 'test'
+  grunt.registerTask 'default', 'b'
