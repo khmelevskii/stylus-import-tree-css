@@ -16,9 +16,6 @@ module.exports = (grunt) ->
     clean:
       test: ['tmp/']
 
-  grunt.registerTask 'logcontent', ->
-    console.log grunt.file.read 'tmp/app.css'
-
   # Load installed tasks
   grunt.file.glob
   .sync('./node_modules/grunt-*/tasks')
