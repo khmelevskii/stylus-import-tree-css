@@ -26,6 +26,9 @@
   "scripts": {
     "test": "grunt test"
   },
+  "peerDependencies": {
+    "stylus": ">=0.37"
+  },
   "dependencies": {
     "stylus": ">=0.37",
     "underscore": "~1.5.1",
