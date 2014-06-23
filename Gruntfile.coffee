@@ -1,12 +1,5 @@
 module.exports = (grunt) ->
   grunt.initConfig
-    coffee:
-      dist:
-        files:
-          'index.js': 'src/index.coffee'
-        options:
-          bare: true
-
     nodeunit:
       files: ['test/test.coffee']
 

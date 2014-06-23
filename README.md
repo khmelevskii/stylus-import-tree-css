@@ -1,4 +1,4 @@
-# stylus-import-tree
+# stylus-import-tree-css
 
 This plugin allows you to recursively import entire directories instead of writing bunch of `@import`
 statements in your stylus file:
