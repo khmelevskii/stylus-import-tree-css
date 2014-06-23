@@ -1,0 +1,53 @@
+{
+  "name": "stylus-import-tree-css",
+  "version": "0.1.10",
+  "homepage": "https://github.com/khmelevskii/stylus-import-tree",
+  "author": {
+    "name": "Derek Petersen",
+    "email": "tuxracer@gmail.com",
+    "url": "https://github.com/tuxracer"
+  },
+  "contributors": [
+    {
+      "name": "Aleksey V Zapparov AKA ixti"
+    },
+    {
+      "name": "Yurii Khmelevskii"
+    },
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/khmelevskii/stylus-import-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khmelevskii/stylus-import-tree/issues"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "peerDependencies": {
+    "stylus": ">=0.37"
+  },
+  "dependencies": {
+    "stylus": ">=0.37",
+    "underscore": "~1.5.1",
+    "glob": "~3.2.6"
+  },
+  "keywords": [
+    "stylus",
+    "css",
+    "directory",
+    "recursive",
+    "import",
+    "grunt"
+  ],
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-stylus": "~0.8.0",
+    "grunt-contrib-coffee": "~0.7.0"
+  }
+}
