@@ -16,7 +16,7 @@ _ = require('underscore');
 
 getStylusFiles = function(dir, cwd) {
   return glob.sync("" + dir + "/**/*.css").map(function(item) {
-    return cwd + path.basename(item);
+    return cwd + item.replace(dir + '/', '');
   });
 };
 
